@@ -18,7 +18,7 @@ export const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-white shadow-md backdrop-blur-md">
+    <header className="sticky top-0 left-0 w-full z-50 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-white shadow-md backdrop-blur-md">
       <div className="max-w-7xl mx-auto p-5 flex justify-between items-center">
         {/* Logo */}
         <Link href="/" className="text-2xl font-bold tracking-wide">

@@ -5,7 +5,7 @@ import { Twitter, Github, Linkedin, Instagram, Facebook, Youtube, LucideYoutube,
 
 export const Hero = () => {
   return (
-    <section className="min-h-screen flex flex-col justify-center items-center text-center p-10">
+    <section className="min-h-screen flex flex-col justify-center items-center text-center sm:px-10 sm:py-14 px-5 py-8">
       {/* Avatar Image */}
       <motion.img
         src="images/gobeecode-profile-picture.png" // 👉 Replace with your image path

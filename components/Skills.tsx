@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { CheckCircle } from 'lucide-react';
 
 const SkillItem = ({ text }: { text: string }) => (
-  <li className="flex items-start gap-3 text-left text-gray-700 dark:text-gray-300 hover:text-indigo-600 transition-colors duration-300">
+  <li className="flex items-center gap-3 text-left text-gray-700 dark:text-gray-300 hover:text-indigo-600 transition-colors duration-300">
     <CheckCircle className="mt-1 text-indigo-500 dark:text-indigo-400" size={20} />
     <span className="text-base">{text}</span>
   </li>
@@ -20,9 +20,9 @@ const SkillCard = ({
   delay: number;
 }) => (
   <motion.div
-    initial={{ opacity: 0, y: 30 }}
+    initial={{ opacity: 0, y: 10 }}
     whileInView={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.6, delay }}
+    transition={{ duration: 0.3, delay }}
     viewport={{ once: true }}
     className="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-200 dark:border-gray-700"
   >
@@ -39,7 +39,7 @@ const SkillCard = ({
 
 export const Skills = () => {
   return (
-    <section id="skills" className="py-14 bg-gray-100 dark:bg-gray-900 text-center">
+    <section id="skills" className="bg-gray-100 dark:bg-gray-900 text-center sm:px-10 sm:py-14 px-5 py-8">
       <motion.h2
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -51,19 +51,19 @@ export const Skills = () => {
       </motion.h2>
 
       <motion.p
-        initial={{ opacity: 0, y: 20 }}
+        initial={{ opacity: 0, y: 10 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, delay: 0.2 }}
+        transition={{ duration: 0.5}}
         viewport={{ once: true }}
         className="text-lg max-w-2xl mx-auto text-gray-600 dark:text-gray-300 mb-12"
       >
         A full-spectrum skill set from designing modern UIs to building secure, scalable backend systems — plus a passion for automation and security.
       </motion.p>
 
-      <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 max-w-6xl mx-auto px-6">
+      <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 max-w-6xl mx-auto">
         <SkillCard
           title="Frontend"
-          delay={0.1}
+          delay={0.3}
           skills={[
             'React, Next.js',
             'Tailwind CSS, Sass, Bootstrap',
@@ -74,7 +74,7 @@ export const Skills = () => {
         />
         <SkillCard
           title="Backend"
-          delay={0.2}
+          delay={0.3}
           skills={[
             'Node.js, Express.js',
             'RESTful APIs, GraphQL',
@@ -96,7 +96,7 @@ export const Skills = () => {
         />
         <SkillCard
           title="Database"
-          delay={0.4}
+          delay={0.6}
           skills={[
             'MongoDB, PostgreSQL, MySQL',
             'Firebase Firestore',
@@ -107,7 +107,7 @@ export const Skills = () => {
         />
         <SkillCard
           title="Automation"
-          delay={0.5}
+          delay={0.6}
           skills={[
             'Python Scripting',
             'Web Scraping (BeautifulSoup, Puppeteer)',
