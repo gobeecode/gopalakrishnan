@@ -18,7 +18,7 @@ export const Navbar = () => {
 
   return (
     <header className="sticky top-0 left-0 w-full z-50 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-white shadow-md ">
-      <div className="max-w-7xl mx-auto flex justify-between items-center gap-8 h-24">
+      <div className="max-w-7xl mx-auto flex justify-between items-center gap-8 p-5">
 
         {/* Logo */}
         <Link href="/" className="flex items-center gap-5">
