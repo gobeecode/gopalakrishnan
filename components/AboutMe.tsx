@@ -64,7 +64,7 @@ export const AboutMe = () => {
             <li className="flex gap-3">
               <span className="text-indigo-500 mt-1">✔</span>
               <span className="text-gray-700 dark:text-gray-300">
-                Top 2% worldwide in <a href="https://tryhackme.com/p/gobeesecure" className="text-indigo-600 underline underline-offset-4">Tryhackme</a>
+                Top 2% worldwide in <a href="https://tryhackme.com/p/gobeesecure" target="_blank" className="text-indigo-600 underline underline-offset-4">TryHackMe</a>
               </span>
             </li>
             <li className="flex gap-3">
@@ -76,15 +76,10 @@ export const AboutMe = () => {
             <li className="flex gap-3">
               <span className="text-indigo-500 mt-1">✔</span>
               <span className="text-gray-700 dark:text-gray-300">
-                Sharing knowledge on <a href="https://linkedin.com/in/gobeecode" target="_blank" className="text-indigo-600 underline underline-offset-4">LinkedIn</a>, <a href="https://x.com/gobeecode" className="text-indigo-600 underline underline-offset-4">Twitter</a> and <a href="https://medium.com/@gobeecode" target="_blank" className="text-indigo-600 underline underline-offset-4">Medium</a>
+                Sharing knowledge on <a href="https://linkedin.com/in/gobeecode" target="_blank" className="text-indigo-600 underline underline-offset-4">LinkedIn</a>, <a href="https://x.com/gobeecode" target="_blank" className="text-indigo-600 underline underline-offset-4">Twitter</a> and <a href="https://medium.com/@gobeecode" target="_blank" className="text-indigo-600 underline underline-offset-4">Medium</a>
               </span>
             </li>
-            <li className="flex gap-3">
-              <span className="text-indigo-500 mt-1">✔</span>
-              <span className="text-gray-700 dark:text-gray-300">
-                Let's connect <a href="#contact" className="text-indigo-600 underline underline-offset-4">here</a>
-              </span>
-            </li>
+
           </ul>
         </motion.div>
       </div>

@@ -1,26 +1,88 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Briefcase } from 'lucide-react';
+import { Briefcase, CheckCircle } from 'lucide-react';
 
 const experiences = [
   {
-    role: 'Full Stack Developer',
-    company: 'Zapsolv Technologies',
+    role: 'Software Engineer Senior - In Test',
+    project: 'G5',
+    company: 'Mettler Toledo',
     location: 'Coimbatore, India',
-    duration: 'Jan 2023 – Present',
-    description:
-      'Leading product and client-based development using Next.js, Node.js, and MongoDB. Driving UI/UX consistency and app performance.',
+    duration: 'June 2022 – Present',
+    description: [
+      'Performed desktop application automation testing with Squish and Python.',
+      'Performed web application automation testing with SeleniumBase and Python.',
+      'Developed TAF Manager (Vue 3 + Python), a full stack application from scratch for test design.',
+    ]
   },
   {
-    role: 'Frontend Developer Intern',
-    company: 'TechNova',
-    location: 'Remote',
-    duration: 'Jun 2022 – Dec 2022',
-    description:
-      'Created pixel-perfect UI components using React and Tailwind CSS. Collaborated closely with designers and backend developers.',
+    role: 'Software Engineer Professional - In Test',
+    project: 'LabX Connected Installer',
+    company: 'Mettler Toledo',
+    location: 'Coimbatore, India',
+    duration: 'November 2022 - June 2023',
+    description: [
+      'Led desktop application automation testing with PyWinAuto, Python and Behave.',
+      'Planned and achieved 100% coverage of features in test automation.',
+      'Developed test automation framework for LabX Connected Installer from scratch.',
+    ]
   },
-  // Add more experiences as needed
+  {
+    role: 'Software Engineer Professional - In Test',
+    project: 'PipetteX',
+    company: 'Mettler Toledo',
+    location: 'Coimbatore, India',
+    duration: 'June 2021 - November 2022',
+    description: [
+      'Led desktop application automation testing with WinAppDriver, C# and Specflow.',
+      'Migrated test automation repository from TFS to GitHub.',
+      'Implemented concurrent testing to enable testing multiple clients simultaneously.',
+    ]
+  },
+  {
+    role: 'Test Analyst',
+    project: 'Advance Auto Parts',
+    company: 'Infosys',
+    location: 'Trivandrum, India',
+    duration: 'September 2020 - April 2021',
+    description: [
+      'Led API automation testing with Rest Assured (Java).',
+      'Led web application automation testing with Selenium and Java.',
+    ]
+  },
+  {
+    role: 'Test Analyst',
+    project: 'XPO Logistics',
+    company: 'Infosys',
+    location: 'Trivandrum, India',
+    duration: 'January 2019 - September 2020',
+    description: [
+      'Conducted API automation testing with RestSharp (C#).',
+      'Participated in frontend web application development with Angular.',
+    ]
+  },
+  {
+    role: 'Software Engineer',
+    project: 'XPO Logistics',
+    company: 'Finastra',
+    location: 'Trivandrum, India',
+    duration: 'December 2016 - January 2019',
+    description: [
+      'Conducted web application automation testing with C# and Specflow.',
+    ]
+  },
+  {
+    role: 'Software Developer',
+    project: 'Debenhams',
+    company: 'UST Global',
+    location: 'Trivandrum, India',
+    duration: 'March 2015 - December 2016',
+    description: [
+      'Conducted web application automation testing with Selenium and Java.',
+      'Participated in manual testing activities.'
+    ]
+  },
 ];
 
 export const Experience = () => {
@@ -63,11 +125,18 @@ export const Experience = () => {
               <Briefcase className="text-indigo-500 dark:text-indigo-400" size={20} />
               {exp.role}
             </h3>
-            <p className="text-sm text-gray-600 dark:text-gray-400 font-medium mt-1">
-              {exp.company} · {exp.location}
+            <p className="text-sm text-gray-600 dark:text-gray-400 font-medium my-2">
+            {exp.project} - {exp.company} · {exp.location}
             </p>
-            <p className="text-sm text-indigo-600 dark:text-indigo-400 mb-2">{exp.duration}</p>
-            <p className="text-gray-700 dark:text-gray-300">{exp.description}</p>
+            <p className="text-sm text-indigo-600 dark:text-indigo-400 my-2">{exp.duration}</p>
+            <ul className="space-y-2 mt-3">
+              {exp.description.map((skill, index) => (
+                <li key={index} className="flex items-center gap-3 text-left text-gray-700 dark:text-gray-300 transition-colors duration-300">
+                  <CheckCircle className="mt-1 text-indigo-500 dark:text-indigo-400" size={20} />
+                  <span className="text-base">{skill}</span>
+                </li>
+              ))}
+            </ul>
           </motion.div>
         ))}
       </div>

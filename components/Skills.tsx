@@ -96,7 +96,7 @@ export const Skills = () => {
         />
         <SkillCard
           title="Database"
-          delay={0.6}
+          delay={0.3}
           skills={[
             'MongoDB, PostgreSQL, MySQL',
             'Firebase Firestore',
@@ -107,7 +107,7 @@ export const Skills = () => {
         />
         <SkillCard
           title="Automation"
-          delay={0.6}
+          delay={0.3}
           skills={[
             'Python Scripting',
             'Web Scraping (BeautifulSoup, Puppeteer)',
@@ -118,7 +118,7 @@ export const Skills = () => {
         />
         <SkillCard
           title="Cybersecurity"
-          delay={0.6}
+          delay={0.3}
           skills={[
             'OWASP Top 10',
             'Input Validation & Sanitization',

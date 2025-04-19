@@ -1,7 +1,8 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Twitter, Github, Linkedin, Instagram, Facebook, Youtube, LucideYoutube, Coffee, Play, PlayCircle } from 'lucide-react'
+import { Twitter, Github, Linkedin, Instagram, Facebook, Youtube, LucideYoutube, Coffee, Play, PlayCircle, Pen, SunMedium, PenLine } from 'lucide-react'
+import Image from 'next/image'
 
 export const Hero = () => {
   return (
@@ -53,25 +54,25 @@ export const Hero = () => {
         className="mt-8 flex justify-center flex-wrap gap-5"
       >
         <a href="https://www.linkedin.com/in/gobeecode" target="_blank" rel="noopener noreferrer">
-          <Linkedin className="h-8 w-8 text-black dark:text-white hover:text-gray-600 dark:hover:text-gray-400 transition" />
+        <Image src="icons/linkedin.svg" width={50} height={50} alt="medium icon" className="transition" />
         </a>
         <a href="https://twitter.com/gobeecode" target="_blank" rel="noopener noreferrer">
-          <Twitter className="h-8 w-8 text-black dark:text-white hover:text-gray-600 dark:hover:text-gray-400 transition" />
-        </a>
-        <a href="https://instagram.com/gobeecode" target="_blank" rel="noopener noreferrer">
-          <Instagram className="h-8 w-8 text-black dark:text-white hover:text-gray-600 dark:hover:text-gray-400 transition" />
-        </a>
-        <a href="https://youtube.com/@gobeecode" target="_blank" rel="noopener noreferrer">
-          <PlayCircle className="h-8 w-8 text-black dark:text-white hover:text-gray-600 dark:hover:text-gray-400 transition" />
-        </a>
-        <a href="https://buymeacoffee.com/gobeecode" target="_blank" rel="noopener noreferrer">
-          <Coffee className="h-8 w-8 text-black dark:text-white hover:text-gray-600 dark:hover:text-gray-400 transition" />
+        <Image src="icons/twitter.svg" width={50} height={50} alt="medium icon" className="transition" />
         </a>
         <a href="https://github.com/gobeecode" target="_blank" rel="noopener noreferrer">
-          <Github className="h-8 w-8 text-black dark:text-white hover:text-gray-600 dark:hover:text-gray-400 transition" />
+        <Image src="icons/github.svg" width={50} height={50} alt="medium icon" className="transition" />
+        </a>
+        <a href="https://medium.com/@gobeecode" target="_blank" rel="noopener noreferrer">
+          <Image src="icons/medium.svg" width={50} height={50} alt="medium icon" className="transition" />
+        </a>
+        <a href="https://instagram.com/gobeecode" target="_blank" rel="noopener noreferrer">
+        <Image src="icons/instagram.svg" width={50} height={50} alt="medium icon" className="transition" />
         </a>
         <a href="https://facebook.com/gobeecode" target="_blank" rel="noopener noreferrer">
-          <Facebook className="h-8 w-8 text-black dark:text-white hover:text-gray-600 dark:hover:text-gray-400 transition" />
+        <Image src="icons/facebook.svg" width={50} height={50} alt="medium icon" className="transition" />
+        </a>
+        <a href="https://youtube.com/@gobeecode" target="_blank" rel="noopener noreferrer">
+        <Image src="icons/youtube.svg" width={50} height={50} alt="medium icon" className="transition" />
         </a>
       </motion.div>
 
@@ -85,7 +86,7 @@ export const Hero = () => {
       >
         <a
           href="#projects"
-          className="inline-block px-6 py-3 bg-black text-white dark:bg-white dark:text-black rounded-full hover:scale-105 transition-transform duration-300"
+          className="inline-block px-8 py-6 bg-black text-white dark:bg-white dark:text-black rounded-full hover:scale-105 transition-transform duration-300"
         >
           View My Projects
         </a>
@@ -98,7 +99,7 @@ export const Hero = () => {
       >
         <a
           href="#contact"
-          className="inline-block px-6 py-3 border-2 rounded-full hover:scale-105 transition-transform duration-300"
+          className="inline-block px-8 py-6 border-2 rounded-full hover:scale-105 transition-transform duration-300"
         >
           Contact Me
         </a>
