@@ -18,15 +18,15 @@ export const Navbar = () => {
 
   return (
     <header className="sticky top-0 left-0 w-full z-50 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-white shadow-md ">
-      <div className="max-w-7xl mx-auto flex justify-between items-center gap-8 p-5">
+      <div className="max-w-7xl mx-auto flex justify-between items-center gap-8 px-5 h-20">
 
         {/* Logo */}
         <Link href="/" className="flex items-center gap-5">
           <motion.img
           src="images/profile.jpg"
           alt="Gopalakrishnan (@gobeecode)"
-          width={60}
-          height={60}
+          width={50}
+          height={50}
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8 }}

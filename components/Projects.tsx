@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Github, Search } from 'lucide-react';
+import { GitBranch, GitCommit, Github, GitMerge, GitPullRequest, Search } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -31,6 +31,15 @@ const projects = [
     tech: ['bug-bounty', ' hackerone-reports', 'bug-bounty-hunting', 'bug-bounty-tools', 'bug-bounty-reports'],
     image: '/images/thumbnails/bug-bounty-reports.png',
     codelink: 'https://github.com/gobeecode/bug-bounty-reports-hackerone',
+  },
+  {
+    title: 'Taskmine',
+    description:
+      'Task management app built with next js and supabase.',
+    tech: ['productivity', 'nextjs', 'pomodoro', 'task-management', 'supabase'],
+    image: '/images/thumbnails/taskmine.png',
+    codelink: 'https://github.com/gobeecode/taskmine',
+    demolink: 'https://taskmine.vercel.app',
   },
 ];
 
@@ -98,7 +107,7 @@ export const Projects = () => {
                 target="_blank"
                 className="flex items-center justify-center gap-2 p-3 border-2 rounded-lg text-white bg-gray-700 text-sm font-medium mt-auto"
               >
-                <Github className="text-white" /> View Project
+                <GitMerge className="text-white" /> View Project
               </Link>
               {project.demolink && 
               <Link
