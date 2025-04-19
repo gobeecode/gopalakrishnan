@@ -115,13 +115,8 @@ export const Projects = () => {
         ))}
       </div>
       <div className="flex items-center justify-center">
-      <li className="flex gap-3">
-              <span className="text-indigo-500 mt-1"></span>
-              <span className="text-gray-700 dark:text-gray-300">
-                View more on my <a href="https://github.com/gobeecode" target="_blank" className="text-indigo-600 underline underline-offset-4">GitHub</a> profile.
-              </span>
-            </li>
-            </div>
+      <a href="https://github.com/gobeecode" target="_blank"><button type="button" className="px-6 py-4 border-2 rounded-lg text-indigo-700 border-indigo-700 text-sm font-medium mt-auto cursor-pointer"> View More</button></a>
+      </div>
     </section>
   );
 };
