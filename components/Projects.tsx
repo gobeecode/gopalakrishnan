@@ -22,7 +22,7 @@ const projects = [
     tech: ['cybersecurity', 'bugbounty', 'bugbountytips', 'bugbountytricks', 'bugbountytools', 'bugbountynotes'],
     image: '/images/placeholder.svg',
     codelink: 'https://github.com/gobeecode/bountymine',
-    demolink: 'bountymine.vercel.app',
+    demolink: 'https://bountymine.vercel.app',
   },
   {
     title: 'Bug Bounty Reports Collection',
