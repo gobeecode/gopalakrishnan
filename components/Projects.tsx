@@ -36,7 +36,7 @@ const projects = [
 
 export const Projects = () => {
   return (
-    <section id="projects" className="bg-white dark:bg-gray-900 text-center sm:px-10 sm:py-14 px-3 py-8">
+    <section id="projects" className="bg-white dark:bg-gray-900 text-center sm:px-10 sm:py-14 sm:px-8 sm:py-10 px-5 py-8">
       <motion.h2
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -57,7 +57,7 @@ export const Projects = () => {
         A selection of meaningful work I’ve built, contributed to, or currently maintain.
       </motion.p>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto sm:px-8 sm:py-10 px-5 py-8 text-start">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto text-start px-3 py-5">
         {projects.map((project, i) => (
           <motion.div
             key={i}
