@@ -24,7 +24,7 @@ const SkillCard = ({
     whileInView={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.3, delay }}
     viewport={{ once: true }}
-    className="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-200 dark:border-gray-700"
+    className="bg-white dark:bg-gray-800 sm:px-8 sm:py-10 px-5 py-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-200 dark:border-gray-700"
   >
     <h3 className="text-xl font-semibold text-indigo-600 dark:text-indigo-400 mb-4">
       {title}

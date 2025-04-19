@@ -7,7 +7,7 @@ export const AboutMe = () => {
   return (
     <section
       id="about"
-      className="bg-white dark:bg-gray-900 sm:px-10 sm:py-14 px-5 py-8"
+      className="bg-white dark:bg-gray-900 sm:px-8 sm:py-10 px-5 py-8"
     >
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 items-center gap-12">
         {/* SVG Illustration */}

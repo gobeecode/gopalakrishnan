@@ -1,15 +1,14 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Twitter, Github, Linkedin, Instagram, Facebook, Youtube, LucideYoutube, Coffee, Play, PlayCircle, Pen, SunMedium, PenLine } from 'lucide-react'
 import Image from 'next/image'
 
 export const Hero = () => {
   return (
-    <section className="min-h-screen flex flex-col justify-center items-center text-center sm:px-10 sm:py-14 px-5 py-8">
+    <section className="min-h-screen flex flex-col justify-center items-center text-center sm:px-8 sm:py-10 px-5 py-8">
       {/* Avatar Image */}
       <motion.img
-        src="images/gobeecode-profile-picture.png" // 👉 Replace with your image path
+        src="images/profile.png" // 👉 Replace with your image path
         alt="Gopalakrishnan"
         width={300}
         height={300}

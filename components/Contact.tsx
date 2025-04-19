@@ -4,7 +4,7 @@ import { Github, Instagram, Linkedin, Twitter, Mail, Phone } from 'lucide-react'
 
 export const Contact = () => {
   return (
-    <section id="contact" className="py-14 px-10 bg-gray-900 text-white">
+    <section id="contact" className="sm:px-8 sm:py-10 px-5 py-8 bg-gray-900 text-white">
       <motion.h2
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}

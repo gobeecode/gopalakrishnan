@@ -4,7 +4,6 @@ import Link from 'next/link';
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
-import { ThemeToggle } from './ThemeToggle';
 
 const navLinks = [
   { name: 'Home', href: '/' },
@@ -18,11 +17,20 @@ export const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 left-0 w-full z-50 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-white shadow-md backdrop-blur-md">
-      <div className="max-w-7xl mx-auto p-5 flex justify-between items-center">
+    <header className="sticky top-0 left-0 w-full z-50 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-white shadow-md">
+      <div className="max-w-7xl mx-auto p-5 h-20 flex justify-between items-center">
         {/* Logo */}
-        <Link href="/" className="text-2xl font-bold tracking-wide">
-          Gopalakrishnan
+        <Link href="/" className="flex items-center gap-5 text-xl tracking-widest uppercase font-medium">
+          <motion.img
+          src="icons/profile.svg" // 👉 Replace with your image path
+          alt="Gopalakrishnan (@gobeecode"
+          width={50}
+          height={50}
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8 }}
+          className="rounded-full"
+        />
         </Link>
 
         {/* Desktop Nav */}
@@ -39,12 +47,10 @@ export const Navbar = () => {
               <span className="absolute left-0 -bottom-1 h-0.5 w-0 bg-white group-hover:w-full transition-all duration-300" />
             </motion.div>
           ))}
-          <ThemeToggle />
         </nav>
 
         {/* Mobile Toggle */}
         <div className="md:hidden flex items-center gap-3">
-          <ThemeToggle />
           <button onClick={() => setOpen(!open)} className="focus:outline-none">
             {open ? <X size={28} /> : <Menu size={28} />}
           </button>

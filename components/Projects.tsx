@@ -57,7 +57,7 @@ export const Projects = () => {
         A selection of meaningful work I’ve built, contributed to, or currently maintain.
       </motion.p>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto px-6 py-10 text-start">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto sm:px-8 sm:py-10 px-5 py-8 text-start">
         {projects.map((project, i) => (
           <motion.div
             key={i}
