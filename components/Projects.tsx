@@ -36,7 +36,7 @@ const projects = [
 
 export const Projects = () => {
   return (
-    <section id="projects" className="bg-white dark:bg-gray-900 text-center sm:px-10 sm:py-14 sm:px-8 sm:py-10 px-5 py-8">
+    <section id="projects" className="bg-white dark:bg-gray-900 text-center sm:px-8 sm:py-10 px-5 py-8">
       <motion.h2
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}

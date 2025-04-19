@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 export const Hero = () => {
   return (
-    <section className="min-h-screen flex flex-col justify-center items-center text-center sm:px-8 sm:py-10 px-5 py-8">
+    <section className="flex flex-col justify-center items-center text-center sm:px-8 sm:py-10 px-5 py-8">
       {/* Avatar Image */}
       <motion.img
         src="images/profile.png" // 👉 Replace with your image path
@@ -61,17 +61,17 @@ export const Hero = () => {
         <a href="https://github.com/gobeecode" target="_blank" rel="noopener noreferrer">
         <Image src="icons/github.svg" width={50} height={50} alt="medium icon" className="transition" />
         </a>
-        <a href="https://medium.com/@gobeecode" target="_blank" rel="noopener noreferrer">
-          <Image src="icons/medium.svg" width={50} height={50} alt="medium icon" className="transition" />
-        </a>
         <a href="https://instagram.com/gobeecode" target="_blank" rel="noopener noreferrer">
         <Image src="icons/instagram.svg" width={50} height={50} alt="medium icon" className="transition" />
         </a>
-        <a href="https://facebook.com/gobeecode" target="_blank" rel="noopener noreferrer">
+        {/* <a href="https://facebook.com/gobeecode" target="_blank" rel="noopener noreferrer">
         <Image src="icons/facebook.svg" width={50} height={50} alt="medium icon" className="transition" />
-        </a>
+        </a> */}
         <a href="https://youtube.com/@gobeecode" target="_blank" rel="noopener noreferrer">
         <Image src="icons/youtube.svg" width={50} height={50} alt="medium icon" className="transition" />
+        </a>
+        <a href="https://medium.com/@gobeecode" target="_blank" rel="noopener noreferrer">
+          <Image src="icons/medium.svg" width={50} height={50} alt="medium icon" className="transition" />
         </a>
       </motion.div>
 

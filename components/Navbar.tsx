@@ -17,22 +17,22 @@ export const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 left-0 w-full z-50 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-white shadow-md">
-      <div className="max-w-7xl mx-auto p-5 h-20 flex justify-between items-center">
+    <header className="sticky top-0 left-0 w-full z-50 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-white shadow-md ">
+      <div className="max-w-7xl mx-auto flex justify-between items-center gap-8 h-24">
+
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-5 text-xl tracking-widest uppercase font-medium">
+        <Link href="/" className="flex items-center gap-5">
           <motion.img
-          src="icons/profile.svg" // 👉 Replace with your image path
-          alt="Gopalakrishnan (@gobeecode"
-          width={50}
-          height={50}
+          src="images/profile.jpg"
+          alt="Gopalakrishnan (@gobeecode)"
+          width={60}
+          height={60}
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8 }}
-          className="rounded-full"
+          className="rounded-md"
         />
         </Link>
-
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center space-x-8">
           {navLinks.map((link) => (

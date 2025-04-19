@@ -1,10 +1,10 @@
 'use client';
 import { motion } from 'framer-motion';
-import { Github, Instagram, Linkedin, Twitter, Mail, Phone } from 'lucide-react';
+import { Github, Instagram, Linkedin, Twitter, Mail, Phone, MessageCircle } from 'lucide-react';
 
 export const Contact = () => {
   return (
-    <section id="contact" className="sm:px-8 sm:py-10 px-5 py-8 bg-gray-900 text-white">
+    <section id="contact" className="bg-gray-900 text-white sm:px-8 sm:py-10 px-5 py-8">
       <motion.h2
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
@@ -23,14 +23,14 @@ export const Contact = () => {
         I would love to hear from you! Whether you're looking for a collaboration, want to chat about tech, or have any questions, feel free to reach out.
       </motion.p>
 
-      <div className="flex justify-center flex-wrap gap-6 md:gap-8 max-w-5xl mx-auto">
+      <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 max-w-5xl mx-auto">
 
         {/* Phone */}
         <motion.a href="tel:+917736346646"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8 }}
-          className="p-6 rounded-xl shadow-xl border-2 border-gray-700 hover:bg-gray-800 transition-all flex flex-col items-center justify-center w-40"
+          className="p-6 rounded-xl shadow-xl border-2 border-gray-700 hover:bg-gray-800 transition-all flex flex-col items-center justify-center w-full"
         >
           <Phone className="text-white text-4xl mb-4" />
           <span className="text-lg font-semibold">Mobile</span>
@@ -41,10 +41,23 @@ export const Contact = () => {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.1 }}
-          className="p-6 rounded-xl shadow-xl border-2 border-gray-700 hover:bg-gray-800 transition-all flex flex-col items-center justify-center w-40"
+          className="p-6 rounded-xl shadow-xl border-2 border-gray-700 hover:bg-gray-800 transition-all flex flex-col items-center justify-center w-full"
         >
           <Mail className="text-white text-4xl mb-4" />
           <span className="text-lg font-semibold text-center break-words">Email</span>
+        </motion.a>
+
+          {/* Whatsapp */}
+          <motion.a
+          href="https://wa.me/917736346646"
+          target="_blank"
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+          className="p-6 rounded-xl shadow-xl border-2 border-gray-700 hover:bg-gray-800 transition-all flex flex-col items-center justify-center w-full"
+        >
+          <MessageCircle className="text-white text-4xl mb-4" />
+          <span className="text-xl font-semibold">Whatsapp</span>
         </motion.a>
 
         {/* Linkedin */}
@@ -54,7 +67,7 @@ export const Contact = () => {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="p-6 rounded-xl shadow-xl border-2 border-gray-700 hover:bg-gray-800 transition-all flex flex-col items-center justify-center w-40"
+          className="p-6 rounded-xl shadow-xl border-2 border-gray-700 hover:bg-gray-800 transition-all flex flex-col items-center justify-center w-full"
         >
           <Linkedin className="text-white text-4xl mb-4" />
           <span className="text-xl font-semibold">Linkedin</span>
@@ -67,7 +80,7 @@ export const Contact = () => {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.3 }}
-          className="p-6 rounded-xl shadow-xl border-2 border-gray-700 hover:bg-gray-800 transition-all flex flex-col items-center justify-center w-40"
+          className="p-6 rounded-xl shadow-xl border-2 border-gray-700 hover:bg-gray-800 transition-all flex flex-col items-center justify-center w-full"
         >
           <Twitter className="text-white text-4xl mb-4" />
           <span className="text-xl font-semibold">Twitter</span>
@@ -80,11 +93,12 @@ export const Contact = () => {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="p-6 rounded-xl shadow-xl border-2 border-gray-700 hover:bg-gray-800 transition-all flex flex-col items-center justify-center w-40"
+          className="p-6 rounded-xl shadow-xl border-2 border-gray-700 hover:bg-gray-800 transition-all flex flex-col items-center justify-center w-full"
         >
           <Instagram className="text-white text-4xl mb-4" />
           <span className="text-xl font-semibold">Instagram</span>
         </motion.a>
+
       </div>
 
       <motion.div
