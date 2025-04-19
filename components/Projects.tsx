@@ -11,7 +11,7 @@ const projects = [
     description:
       'Opensource google dork engine with extensive collection of google dorks!',
     tech: ['bug-bounty', 'google-dorks', 'google-dorking', 'bug-bounty-tools', 'google-dorking-tool', 'google-dorks-for-hackers'],
-    image: '/images/placeholder.svg',
+    image: '/images/thumbnails/dorkmine.png',
     codelink: 'https://github.com/gobeecode/dorkmine',
     demolink: 'https://dorkmine.vercel.app',
   },
@@ -20,7 +20,7 @@ const projects = [
     description:
       'Curated collection of bug bounty notes and tutorials in one place. Visit the link below to view the docs.',
     tech: ['cybersecurity', 'bugbounty', 'bugbountytips', 'bugbountytricks', 'bugbountytools', 'bugbountynotes'],
-    image: '/images/placeholder.svg',
+    image: '/images/thumbnails/bountymine.png',
     codelink: 'https://github.com/gobeecode/bountymine',
     demolink: 'https://bountymine.vercel.app',
   },
@@ -29,7 +29,7 @@ const projects = [
     description:
       'Complete collection of bug bounty reports from Hackerone.',
     tech: ['bug-bounty', ' hackerone-reports', 'bug-bounty-hunting', 'bug-bounty-tools', 'bug-bounty-reports'],
-    image: '/images/placeholder.svg',
+    image: '/images/thumbnails/bug-bounty-reports.png',
     codelink: 'https://github.com/gobeecode/bug-bounty-reports-hackerone',
   },
 ];
