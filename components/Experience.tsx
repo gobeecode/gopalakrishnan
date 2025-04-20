@@ -9,7 +9,7 @@ const experiences = [
     project: 'G5',
     company: 'Mettler Toledo',
     location: 'Coimbatore, India',
-    duration: 'June 2022 – Present',
+    duration: 'June 2023 – Present',
     description: [
       'Performed desktop application automation testing with Squish and Python.',
       'Performed web application automation testing with SeleniumBase and Python.',
