@@ -7,6 +7,15 @@ import Link from 'next/link';
 
 const projects = [
   {
+    title: 'Zapcalc',
+    description:
+      'Opensource personal finance calculator collection.',
+    tech: ['finance', 'calculators', 'personal-finance-tools', 'open-source-tools', 'personal-finance-tips', 'personal-finance-tricks'],
+    image: '/images/thumbnails/zapcalc.png',
+    codelink: 'https://github.com/gobeecode/zapcalc',
+    demolink: 'https://zapcalc.vercel.app',
+  },
+  {
     title: 'Dorkmine',
     description:
       'Opensource google dork engine with extensive collection of google dorks!',
